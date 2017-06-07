@@ -16,7 +16,7 @@ test:
 
 deployment:
   hub:
-    branch: [ci_publish, master]
+    branch: /.*/
     commands:
       - docker login -u jjjjedu -e jevgeni172@gmail.com -p testpass 
       - docker tag dockerapp_dockerapp jjjjedu/dockerapp:$CIRCLE_SHA1
